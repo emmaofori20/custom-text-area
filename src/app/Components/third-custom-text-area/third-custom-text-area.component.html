@@ -1,0 +1,14 @@
+<!-- <mat-form-field class="example-full-width" >
+  <mat-label floatLabel = "'auto'">Label</mat-label>
+  <textarea matInput  cdkTextareaAutosize
+  #autosize="cdkTextareaAutosize"
+          cdkAutosizeMinRows="1"
+          [cdkAutosizeMaxRows]="rows"
+          [formControl]="control"
+  [placeholder]="tex"></textarea>
+</mat-form-field> -->
+
+<div class="inputBox">
+  <textarea #textareaElement [rows]="getRows()" [style]="customStyleTextArea" [formControl]="control"  [placeholder]="placeholder" (input)="autogrowTextarea()" ></textarea>
+  <span [style]="customStyleLabel">{{label}}</span>
+</div>

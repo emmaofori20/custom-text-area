@@ -1,0 +1,40 @@
+.inputBox{
+  position: relative;
+}
+
+.inputBox textarea{
+  width: 100%;
+  padding:10px;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 5px;
+  outline: none;
+  color: black;
+  font-size: 1em;
+  overflow-y: scroll;
+
+}
+
+.inputBox span{
+  position: absolute;
+  left: 0;
+  pointer-events:none;
+  font-size: 1em;
+  color: rgba(255,255,255,0.25) ;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.inputBox textarea:valid ~ span,
+.inputBox textarea:focus ~ span{
+  color: #060a0a;
+  transform: translateX(10px) translateY(-7px);
+  font-size: .65em;
+  padding: 0 10px;
+  background: #fff;
+  // letter-spacing: 0.2em;
+}
+
+// .inputBox textarea:valid
+// .inputBox textarea:focus {
+//   border: 1px solid #00dfc4;
+// }

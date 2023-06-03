@@ -3,7 +3,17 @@
 <app-custom-text-area [label]="'How do you prepare rice'" ></app-custom-text-area>
 <div style="height: 20px;"></div>
 <h3 style="color: white;">Approved text area</h3>
-<app-secondcustom-text-area 
-[rows]= 5 
-[label]="'Define your bins'" 
+<app-secondcustom-text-area
+[rows]= 5
+[label]="'Define your bins'"
 [placeholder]="'Ex.. they are green in color'"></app-secondcustom-text-area>
+
+<app-third-custom-text-area
+[label]="'Define & style your label'"
+[Autosize]= true
+[MinRow]= 1
+[MaxRow]=5
+[placeholder]="'you can simple style the component to your liking'"
+[customStyleLabel]="{ 'color': 'blue', 'font-size': '16px' }"
+[customStyleTextArea]="{'border': '1px solid green'}"
+></app-third-custom-text-area>

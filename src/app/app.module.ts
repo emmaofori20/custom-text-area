@@ -8,6 +8,7 @@ import { CustomTextAreaComponent } from './Components/custom-text-area/custom-te
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatInputModule} from '@angular/material/input';
 import { SecondcustomTextAreaComponent } from './Components/secondcustom-text-area/secondcustom-text-area.component';
+import { ThirdCustomTextAreaComponent } from './Components/third-custom-text-area/third-custom-text-area.component';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { SecondcustomTextAreaComponent } from './Components/secondcustom-text-ar
     AppComponent,
     CustomTextAreaComponent,
     SecondcustomTextAreaComponent,
+    ThirdCustomTextAreaComponent,
     
   ],
   imports: [
