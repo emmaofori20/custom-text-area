@@ -1,38 +1,42 @@
-.inputBox{
+.inputBox {
   position: relative;
 }
 
-.inputBox textarea{
+.inputBox textarea {
   width: 100%;
-  padding:10px;
-  border: 1px solid rgba(255,255,255,0.25);
+  padding: 15px 20px;
   border-radius: 5px;
-  outline: none;
-  color: black;
   font-size: 1em;
   overflow-y: scroll;
+  border: 1px solid rgba(172, 170, 170, 0.884);
+  color: black;
 
 }
 
-.inputBox span{
+.inputBox textarea :focus {
+  outline: none;
+}
+
+
+.inputBox span {
   position: absolute;
   left: 0;
-  pointer-events:none;
+  pointer-events: none;
   font-size: 1em;
-  color: rgba(255,255,255,0.25) ;
-  text-transform: uppercase;
+  // color: rgba(255, 255, 255, 0.25);
+  transform: translateX(15px) translateY(-7px);
+  padding: 1% 3%;
   transition: 0.5s;
 }
 
-.inputBox textarea:valid ~ span,
-.inputBox textarea:focus ~ span{
-  color: #060a0a;
-  transform: translateX(10px) translateY(-7px);
-  font-size: .65em;
-  padding: 0 10px;
-  background: #fff;
-  // letter-spacing: 0.2em;
-}
+// .inputBox textarea:valid~span,
+// .inputBox textarea:focus~span {
+//   //color: #060a0a;
+//   //font-size: .65em;
+//   // padding: 0 10px;
+//   //background: #fff;
+//   // letter-spacing: 0.2em;
+// }
 
 // .inputBox textarea:valid
 // .inputBox textarea:focus {

@@ -9,6 +9,16 @@
 </mat-form-field> -->
 
 <div class="inputBox">
-  <textarea #textareaElement [rows]="getRows()" [style]="customStyleTextArea" [formControl]="control"  [placeholder]="placeholder" (input)="autogrowTextarea()" ></textarea>
-  <span [style]="customStyleLabel">{{label}}</span>
+  <textarea
+    #textareaElement
+    [rows]="getRows()"
+    [style]="customStyleTextArea"
+    [ngClass]="customTextAreaClass"
+    [formControl]="control"
+    [placeholder]="placeholder"
+    (input)="autogrowTextarea()"
+  ></textarea>
+  <span [style]="customStyleLabel" [ngClass]="customLabelClass">{{
+    label
+  }}</span>
 </div>
